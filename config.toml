@@ -1,0 +1,46 @@
+baseurl = "https://example.com/"
+title = "Ryumin Sergey"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+
+[markup.goldmark.renderer]
+    unsafe = true 
+
+[params]
+    author = "Ryumin Sergey"
+    avatar = "avatar.jpg"
+    avatarDescription = "My avatar description"
+    description = """
+        C++ software engineer from Saint-Petersburg
+    """
+    publicationYear = "2022"
+
+# Make sure setting a following option for search bar to work
+[outputs]
+    section = ["JSON", "HTML"]
+    term = ["JSON", "HTML"]
+
+[[menu.main]]
+    identifier = "github"
+    # name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/ryu-min"
+    weight = 30
+
+[[menu.main]]
+    identifier = "email"
+    # name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:SergeyR6@yandex.ru"
+    weight = 40
+
+
+[[menu.main]]
+    identifier = "instagram"
+    pre = "<i class='fa fa-camera-retro fa-lg'></i>"
+    url = "https://www.instagram.com/ryumin_217"
+    weight = 40
+
+
+
